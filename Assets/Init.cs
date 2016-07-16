@@ -20,5 +20,8 @@ public class Init : MonoBehaviour {
 		if (other.tag == "Respawn") {
 			SceneManager.LoadScene (0, LoadSceneMode.Single);
 		}
+		if (other.tag == "Finish") {
+			Application.Quit();
+		}
 	}
 }
